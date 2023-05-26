@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Rating state start -->
+
+  <section class="container rating-container">
+    <div class="circle"><img src="images/icon-star.svg" alt=""></div>
+    <h1>How did we do?</h1>
+    <p>
+      Please let us know how we did with your support request. All feedback is appreciated
+      to help us improve our offering!
+    </p>
+    <div class="rating-number-list">
+      <button class="circle rating-btn btn " id="num-1">
+        <span class="rating-number">1</span>
+      </button>
+      <button class="circle rating-btn btn " id="num-2">
+        <span class="rating-number">2</span>
+      </button>
+      <button class="circle rating-btn btn " id="num-3">
+        <span class="rating-number">3</span>
+      </button>
+      <button class="circle rating-btn btn " id="num-4">
+        <span class="rating-number">4</span>
+      </button>
+      <button class="circle rating-btn btn " id="num-5">
+        <span class="rating-number">5</span>
+      </button>
+    </div>
+    <button class="btn submit-btn">Submit</button>
+  </section>
+
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+
+  <section class="container thank-container hidden">
+    <img src="images/illustration-thank-you.svg" alt="">
+    <div class="user-rated-box">You selected <span class="rated-number"></span> out of 5</div>
+    <h2>Thank you!</h2>
+    <p>
+      We appreciate you taking the time to give a rating. If you ever need more support,
+      don’t hesitate to get in touch!
+    </p>
+  </section>
+
+  <!-- Thank you state end -->
+
+
+  <!-- custom js file link -->
+  <script src="js/script.js"></script>
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>
